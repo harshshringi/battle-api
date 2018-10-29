@@ -16,4 +16,7 @@ app.use('/api/auth', AuthController);
 var BattleController = require(__root + 'battle/BattleController');
 app.use('/api/battle', BattleController);
 
+var BattleController_Auth = require(__root + 'battle/BattleController_Auth');
+app.use('/api/battle_auth', BattleController_Auth);
+
 module.exports = app;
