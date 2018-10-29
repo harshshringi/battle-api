@@ -26,26 +26,26 @@ In order to use the auth endpoints, one needs to use the register/login endpoint
 
   name: Some Name  
   email: something@domain.com  
-  password: <password>  
+  password: _password_  
 
   Successful response will contain the following data  
   auth: boolean  
-  token: <token>  
+  token: _token_  
 
 2. For an existing user, the below endpoint is to be used to log in:  
   POST api/auth/login  
   Request body to be x-www-form-urlencoded  
 
-  email: <registered email id>  
-  password: <password>  
+  email: _registered email id_  
+  password: _password_  
 
   Successful response will contain the following data  
   auth: boolean  
-  token: <token>  
+  token: _token_  
 
 
 3. Call the endpoint with the jwt, like so:  
  GET https://desolate-brook-68153.herokuapp.com/api/battle_auth/stats  
 
  Request headers:  
- x-access-token: <token>  
+ x-access-token: _token_  
